@@ -23,7 +23,8 @@ class ProfileView(TemplateView):
     account. If two-factor is enabled, it also lists the primary verification
     method and backup verification methods.
     """
-    template_name = 'two_factor/profile/profile.html'
+    # template_name = 'two_factor/profile/profile.html'
+    template_name = 'profile.html'
 
     def get_context_data(self, **kwargs):
         try:
