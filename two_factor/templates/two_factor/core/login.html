@@ -1,4 +1,6 @@
 {% extends "layouts/base-fullscreen.html" %}
+{% load i18n %}
+{% load static %}
 
 {% block title %} Sign IN {% endblock %}
 
@@ -9,7 +11,7 @@
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="/static/assets/images/logo-dark.png" alt="" class="img-fluid mb-4">
+						<img src="{% static '/assets/images/logo-dark.png' %}" alt="" class="img-fluid mb-4">
 						<h4 class="mb-3 f-w-400">{% trans "Login" %}</h4>
 						{% if wizard.steps.current == 'auth' %}
 						  <p>{% blocktrans %}Enter your credentials.{% endblocktrans %}</p>
