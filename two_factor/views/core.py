@@ -582,7 +582,9 @@ class BackupTokensView(FormView):
     """
     form_class = Form
     success_url = 'two_factor:backup_tokens'
-    template_name = 'two_factor/core/backup_tokens.html'
+    # template_name = 'two_factor/core/backup_tokens.html'
+    template_name = 'backup_tokens.html'
+
     number_of_tokens = 10
 
     def get_device(self):
