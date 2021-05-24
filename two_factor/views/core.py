@@ -400,7 +400,9 @@ class SetupView(IdempotentSessionWizardView):
     """
     success_url = 'two_factor:setup_complete'
     qrcode_url = 'two_factor:qr'
-    template_name = 'two_factor/core/setup.html'
+#    template_name = 'two_factor/core/setup.html'
+    template_name = 'setup.html'
+
     session_key_name = 'django_two_factor-qr_secret_key'
     initial_dict = {}
     form_list = (
