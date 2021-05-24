@@ -699,7 +699,8 @@ class SetupCompleteView(TemplateView):
     """
     View congratulation the user when OTP setup has completed.
     """
-    template_name = 'two_factor/core/setup_complete.html'
+    # template_name = 'two_factor/core/setup_complete.html'
+    template_name = 'setup_complete.html'
 
     def get_context_data(self):
         return {
