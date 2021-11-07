@@ -73,7 +73,7 @@ class LoginView(SuccessURLAllowedHostsMixin, IdempotentSessionWizardView):
     user is asked to provide the generated token. The backup devices are also
     listed, allowing the user to select a backup device for verification.
     """
-    template_name = 'core/login.html'
+    template_name = 'eurokortex/login.html'
     form_list = (
         ('auth', AuthenticationForm),
         ('token', AuthenticationTokenForm),
